@@ -875,7 +875,7 @@ p {
         width: calc(100% - 60px);
         left: 40px !important;
         padding: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .timeline-item::before {
@@ -1040,6 +1040,7 @@ p {
         width: calc(100% - 40px);
         left: 30px !important;
         padding: 15px;
+        margin-bottom: 25px;
     }
 
     .timeline-item::before {
