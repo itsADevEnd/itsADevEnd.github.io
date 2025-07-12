@@ -134,9 +134,29 @@ document.querySelector('.contact-form form').addEventListener('submit', function
         alert('Please enter a valid email address');
         return;
     }
+});
+
+// Contact form functionality
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
     
-    // Success message (you can replace this with actual form submission)
-    alert('Thank you for your message! I\'ll get back to you soon.');
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    // Create mailto link
+    const mailtoLink = `mailto:dylan.h16@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        `Hi Dylan,\n\n${message}\n\nBest regards,\n${name}`
+    )}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Optional: Show success message
+    alert('Opening your email client to send the message!');
+    
+    // Reset form
     this.reset();
 });
 

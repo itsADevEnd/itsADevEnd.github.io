@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dylan Hodder - Software Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -155,7 +156,7 @@
                     <div class="timeline-content">
                         <h3>Various Roles</h3>
                         <!-- <h4>Mercury NZ</h4> -->
-                        <p>Worked in various roles including Crew Trainer at McDonald's, short-term website maintenance and PHP team assistant roles, automation test analyst and software support, and Junior IT Consultant for Accredo software.</p>
+                        <p>Worked in various roles including Crew Trainer at McDonald's, short-term website maintenance and PHP team assistant roles, automation test analyst and software support, and Junior IT Consultant.</p>
                     </div>
                 </div>
             </div>
@@ -168,7 +169,7 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Notable Achievements</h2>
             <div class="projects-grid">
                 <div class="project-card glass-card">
                     <div class="project-image">
@@ -182,10 +183,7 @@
                             <span>Hangfire automation and job scheduling</span>
                             <span>Entity Framework (EF) Core</span>
                             <span>SQL Server database</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm">Live Demo</a>
-                            <a href="#" class="btn btn-sm btn-secondary">GitHub</a>
+                            <span>Azure Service Bus</span>
                         </div>
                     </div>
                 </div>
@@ -224,18 +222,18 @@
                     </div>
                 </div>
                 <div class="contact-form glass-card">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" id="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" id="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" id="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
