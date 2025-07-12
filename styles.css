@@ -514,12 +514,12 @@ body::before {
     margin-bottom: 0.5rem;
 }
 
-/* Projects Section */
-.projects {
+/* Achievements Section */
+.achievements {
     padding: 100px 0;
 }
 
-.projects-grid {
+.achievements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
@@ -868,8 +868,8 @@ p {
         margin-bottom: 10px;
     }
 
-    /* Projects Section Mobile */
-    .projects-grid {
+    /* Achievements Section Mobile */
+    .Achievements-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
