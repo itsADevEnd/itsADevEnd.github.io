@@ -576,13 +576,16 @@ body::before {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-info {
     padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
 }
 
 .contact-info h3 {
@@ -635,38 +638,6 @@ body::before {
 .social-link:hover {
     background: #667eea;
     transform: translateY(-3px);
-}
-
-.contact-form {
-    padding: 40px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.3);
 }
 
 /* Footer */
@@ -868,18 +839,18 @@ p {
 
     /* Timeline Mobile */
     .timeline::before {
-        left: 20px;
+        left: 25px;
     }
 
     .timeline-item {
-        width: calc(100% - 60px);
-        left: 40px !important;
+        width: calc(100% - 70px);
+        left: 50px !important;
         padding: 20px;
         margin-bottom: 30px;
     }
 
     .timeline-item::before {
-        left: -30px !important;
+        left: -35px !important;
     }
 
     .timeline-date {
@@ -915,12 +886,12 @@ p {
 
     /* Contact Section Mobile */
     .contact-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        padding: 0 20px;
     }
 
-    .contact-info, .contact-form {
+    .contact-info {
         padding: 25px;
+        max-width: 100%;
     }
 
     .contact-item {
@@ -942,18 +913,6 @@ p {
         font-size: 1.5rem;
         padding: 15px;
         margin: 0 10px;
-    }
-
-    /* Form Mobile */
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        font-size: 1rem;
-        padding: 15px;
-        border-radius: 10px;
     }
 
     /* Button Mobile */
@@ -1037,14 +996,14 @@ p {
 
     /* Timeline adjustments */
     .timeline-item {
-        width: calc(100% - 40px);
-        left: 30px !important;
+        width: calc(100% - 50px);
+        left: 40px !important;
         padding: 15px;
         margin-bottom: 25px;
     }
 
     .timeline-item::before {
-        left: -22px !important;
+        left: -27px !important;
     }
 
     .timeline-date {

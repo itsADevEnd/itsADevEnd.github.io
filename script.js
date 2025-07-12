@@ -136,30 +136,6 @@ document.querySelector('.contact-form form').addEventListener('submit', function
     }
 });
 
-// Contact form functionality
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    
-    // Create mailto link
-    const mailtoLink = `mailto:dylan.h16@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-        `Hi Dylan,\n\n${message}\n\nBest regards,\n${name}`
-    )}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Optional: Show success message
-    alert('Opening your email client to send the message!');
-    
-    // Reset form
-    this.reset();
-});
-
 // Add hover effects to project cards
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
